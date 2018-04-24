@@ -29,13 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href=" {% url 'home' %} ">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="https://www.linkedin.com/in/mike-mann-a82962113/">LinkedIn</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href=" {% url 'aboutme' %} ">About Me</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -50,26 +47,14 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Mike Mann</h1>
-          <p>Welcome to my personal webpage! You can view some of my recent personal projects below.</p>
-          <p><a class="btn btn-info btn-lg" href=" {% url 'aboutme' %} " role="button">About Me!</a></p>
+          <p>First, I want to thank you for taking the time to stop by my personal website! 
+              I am a recent Computer Science graduate from Oregon State University, “Go Beavers” and also hold a degree in Business Administration from Northwood University, “Go Timberwolves!” 
+              I most recently completed an internship with a Cloud company working on … 
+              In my spare-time, I enjoy working on … 
+              I am currently working on </p>
+          <p><a class="btn btn-info btn-lg" href="mailto:mannmik@oregonstate.edu" role="button">Contact Me!</a></p>
         </div>
       </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          {% for project in projects.all %}
-          <div class="col-md-4">
-            <h2> {{ project.title }} </h2>
-            <p> {{ project.summary }} </p>
-            <p><a class="btn btn-secondary" href="{{ project.url }}" role="button">View Repository &raquo;</a></p>
-          </div>
-         {% endfor %}
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
 
     </main>
 
