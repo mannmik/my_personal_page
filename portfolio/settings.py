@@ -66,11 +66,11 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
+        'NAME': 'portfoliodb',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'mypage123',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5292',
     }
 }
 
@@ -116,3 +116,8 @@ STATIC_URL = '/static/'
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+try:
+    from local_settings import *
+except:
+    pass
