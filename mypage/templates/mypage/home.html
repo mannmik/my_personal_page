@@ -32,7 +32,7 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="https://www.linkedin.com/in/mike-mann-a82962113/">LinkedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/mike-mann-a82962113/" target="_blank">LinkedIn</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href=" {% url 'aboutme' %} ">About Me</a>
@@ -62,7 +62,7 @@
           <div class="col-md-4">
             <h2> {{ project.title }} </h2>
             <p> {{ project.summary }} </p>
-            <p><a class="btn btn-secondary" href="{{ project.url }}" role="button">View Repository &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="{{ project.url }}" target="_blank" role="button">View Repository &raquo;</a></p>
           </div>
          {% endfor %}
         </div>
@@ -73,15 +73,15 @@
 
     </main>
 
-    <footer class="footer text-center container-fluid">
+    <footer class="footer text-center container-fluid" style=padding-bottom:10px>
         <div class="container">
             <span style=font-size:25px>&copy; Mike Mann {% now "Y" %}</span>
             <br>
             <span> 
-                <a style="color:#17a2b8;font-size:25px;padding-right:4px" class="fa fa-linkedin square" href="https://www.linkedin.com/in/mike-mann-a82962113/"></a>
+                <a style="color:#17a2b8;font-size:25px;padding-right:4px" class="fa fa-linkedin square" href="https://www.linkedin.com/in/mike-mann-a82962113/" target="_blank"></a>
             </span>
             <span>
-                <a style="color:#17a2b8;font-size:25px;padding-right:4px" class="fa fa-github social" href="https://github.com/mannmik"></a>
+                <a style="color:#17a2b8;font-size:25px;padding-right:4px" class="fa fa-github social" href="https://github.com/mannmik" target="_blank"></a>
             </span>
             <span>
                 <a style="color:#17a2b8;font-size:21px;padding-right:4px" class="fa fa-envelope-o" href="mailto:mannmik@oregonstate.edu?Subject=Hey Mike!"></a>
